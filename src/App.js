@@ -1,5 +1,6 @@
 import React, {createContext, useCallback, useContext, useEffect, useMemo, useReducer, useRef, useState} from 'react';
 
+// react-toastify
 
 
 function App() {
@@ -72,6 +73,44 @@ function App() {
         // and return
 
 
+       /*
+       ############## Calling an API###############
+           import axios from axios
+           const apiEndpoints = "Url";
+           state = {
+             posts: []
+           }
+           async componentDidMount() {
+            const {data: posts } = await axios.get("Url")
+            this.setState({posts})
+           }
+           ################ creating data ################
+           handleAdd = async() => {
+           const obj = { title: "a", body: "b"};
+           const {data: post } = await axios.post(url, obj);
+           const posts = post, ...this.state.posts];
+           this.setState({posts});
+           }
+
+           ################ Update data ################
+           axios.patch(url + '/' + post.id, {title: post.title });
+           handleUpdate = async post => {
+           post.title = "Update";
+           const {data}  = axios.put(url + '/' + post.id, post);
+           const posts = [...this.state/posts];
+           const index = posts.indexOf(post);
+           posts[index] = {...post};
+           this.setState({posts});
+
+
+           ################ deleting data ################
+            await axios.delete(url, + "/" + post.id);
+
+            const post = this.state.posts.filter(p => p.id !== post.id;
+            this.setState({ posts})
+
+           }
+        */
 
 
 
